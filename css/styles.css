@@ -1,0 +1,196 @@
+/* accent color #2196F3 */
+/* basic color text #212121 */
+/* secondary color text #757575 */
+/* white #ffffff */
+/* secondary background color #F5F4FA */
+/* accent backround color #2F303A */
+/* contacts footer rgba(255, 255, 255, 0,6) */
+:root {
+  --accent-color: #2196f3;
+  --basic-color-text: #757575;
+  --secondary-color-text: #212121;
+  --primary-white-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+  --footer-bg-color: #2f303a;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --secondary-accent-color: #188ce8;
+  --primary-font-famyly: Roboto, sans-serif;
+  --secondary-font-family: Raleway, sans-serif;
+}
+body {
+  color: var(--basic-color-text);
+  background-color: var(--primary-white-color);
+
+  font-family: var(--primary-font-famyly);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+/* ===components start=== */
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+.title {
+  color: var(--secondary-color-text);
+  font-size: 36px;
+  line-height: 1.17;
+}
+/* ===component end=== */
+/* ===logo start=== */
+.logo {
+  color: var(--secondary-color-text);
+
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.logo-accent {
+  color: var(--accent-color);
+}
+/* ===logo end ===*/
+/* ===site-nav start=== */
+.site-nav {
+  font-weight: 500;
+  line-height: 1.14;
+}
+.link.nav {
+  color: var(--secondary-color-text);
+}
+.contacts a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.feedback.link {
+  color: var(--basic-color-text);
+}
+.link.nav:hover,
+.link.nav:focus,
+.feedback.link:hover,
+.feedback.link:focus {
+  color: var(--accent-color);
+}
+.link.nav.current {
+  color: var(--accent-color);
+}
+/* ===site-nav end=== */
+/* ===hero start=== */
+.hero {
+  background-color: var(--footer-bg-color);
+}
+.hero-title {
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* ===hero end */
+/* ===buttons start=== */
+.button {
+  color: var(--secondary-color-text);
+  background-color: var(--secondary-bg-color);
+
+  font-size: 16px;
+  font-family: inherit;
+  text-align: center;
+}
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+}
+.button.primary:hover,
+.button.primary:focus {
+  background-color: var(--secondary-accent-color);
+}
+.button.secondary {
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  cursor: pointer;
+}
+.button.secondary.active {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+/* ===buttons end=== */
+/* ===sections primary page start===*/
+.features-point {
+  color: var(--secondary-color-text);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.team-section {
+  background-color: var(--secondary-bg-color);
+}
+.team-description {
+  background-color: var(--primary-white-color);
+}
+.team-name,
+.team-position {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.team-name {
+  color: var(--secondary-color-text);
+
+  font-weight: 500;
+}
+/* ===sections primary page end=== */
+/* ===section portfolio page start=== */
+.portfolio-title {
+  color: var(--secondary-color-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.portfolio-exemple {
+  font-size: 16px;
+  line-height: 1.87;
+}
+/* section portfolio page end=== */
+/* ===footer start=== */
+.footer {
+  background-color: var(--footer-bg-color);
+}
+.footer .logo {
+  color: var(--primary-white-color);
+}
+.location {
+  color: var(--primary-white-color);
+  font-style: normal;
+}
+.location:hover,
+.location:focus {
+  color: var(--accent-color);
+}
+.feedback.mail.link,
+.feedback.tell.link {
+  color: var(--footer-contact-color);
+  font-style: normal;
+}
+/* ===footer end=== */
