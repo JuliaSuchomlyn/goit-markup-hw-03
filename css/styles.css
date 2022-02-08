@@ -38,10 +38,41 @@ body {
   color: var(--secondary-color-text);
   font-size: 36px;
   line-height: 1.17;
+
+  padding-bottom: 50px;
+  text-align: center;
+}
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+}
+.working-list .item {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid rgb(191, 233, 40);
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: aqua;
 }
 /* ===component end=== */
 /* ===logo start=== */
 .logo {
+  margin-right: 93px;
   color: var(--secondary-color-text);
 
   font-family: var(--secondary-font-family);
@@ -55,9 +86,25 @@ body {
 }
 /* ===logo end ===*/
 /* ===site-nav start=== */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .site-nav {
+  display: flex;
+
   font-weight: 500;
   line-height: 1.14;
+}
+.site-nav .item:not(:last-child),
+.contacts .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts {
+  display: flex;
+  margin-left: auto;
 }
 .link.nav {
   color: var(--secondary-color-text);
@@ -84,6 +131,7 @@ body {
 /* ===hero start=== */
 .hero {
   background-color: var(--footer-bg-color);
+  text-align: center;
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -135,13 +183,29 @@ body {
 }
 /* ===buttons end=== */
 /* ===sections primary page start===*/
+.features-list .item:not(:last-child),
+.working-list .item:not(:last-child),
+.team-list .item:not(:last-child) {
+  margin-right: 0;
+}
+.features-list,
+.team-list,
+.working-list {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0;
+}
 .features-point {
   color: var(--secondary-color-text);
 
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  padding-bottom: 10px;
 }
+
 .team-section {
   background-color: var(--secondary-bg-color);
 }
@@ -158,6 +222,7 @@ body {
   color: var(--secondary-color-text);
 
   font-weight: 500;
+  padding-bottom: 10px;
 }
 /* ===sections primary page end=== */
 /* ===section portfolio page start=== */
