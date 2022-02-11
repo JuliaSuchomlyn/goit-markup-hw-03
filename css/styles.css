@@ -104,6 +104,10 @@ ul {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+nav {
+  display: flex;
+  align-items: center;
+}
 .site-nav {
   display: flex;
 
@@ -122,11 +126,11 @@ ul {
   color: var(--secondary-color-text);
 }
 .feedback.link {
-  color: var(--basic-color-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  color: var(--basic-color-text);
 }
 .link.nav:hover,
 .link.nav:focus,
@@ -187,6 +191,7 @@ ul {
 }
 .button.secondary {
   padding: 6px 22px;
+
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -219,13 +224,13 @@ ul {
   justify-content: center;
 }
 .features-point {
-  color: var(--secondary-color-text);
+  padding-bottom: 10px;
 
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 
-  padding-bottom: 10px;
+  color: var(--secondary-color-text);
 }
 
 .team-section {
@@ -235,8 +240,7 @@ ul {
   background-color: var(--primary-white-color);
 }
 .card-team {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 10px;
 }
 .team-name,
 .team-position {
@@ -277,11 +281,18 @@ ul {
 
 .portfolio-title {
   margin-bottom: 4px;
-  color: var(--secondary-color-text);
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--secondary-color-text);
+}
+.card-portfolio {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 .portfolio-exemple {
   font-size: 16px;
@@ -304,15 +315,15 @@ ul {
   color: var(--primary-white-color);
 }
 .location {
-  color: var(--primary-white-color);
   font-style: normal;
+  color: var(--primary-white-color);
 }
 .location:hover,
 .location:focus {
   color: var(--accent-color);
 }
-.feedback.mail.link,
-.feedback.tell.link {
+.mail.link,
+.tell.link {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
